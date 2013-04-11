@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_RzU6YEJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ide.application" bindingContexts="_RzU6YUJKEeKXRZlTNXf4Fw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_RzVhe0JKEeKXRZlTNXf4Fw" label="Magic Tome Server" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_RzWIgEJKEeKXRZlTNXf4Fw">
+      <children xsi:type="advanced:Perspective" xmi:id="_RzWIgUJKEeKXRZlTNXf4Fw">
+        <children xsi:type="basic:PartStack" xmi:id="_RzWIg0JKEeKXRZlTNXf4Fw" containerData="100">
+          <children xsi:type="basic:Part" xmi:id="_6yLyoEJMEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome-server.database.set" containerData="100" contributionURI="bundleclass://com.mmyumu.magic-tome-server/com.mmyumu.magictome.ui.sets.SetsPart" label="Sets"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_RzVhfEJKEeKXRZlTNXf4Fw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_RzVhfUJKEeKXRZlTNXf4Fw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RzVhfkJKEeKXRZlTNXf4Fw" label="Open database" iconURI="platform:/plugin/com.mmyumu.magic-tome-server/icons/folder-open-document_16x16.png" command="_RzVhckJKEeKXRZlTNXf4Fw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RzVhf0JKEeKXRZlTNXf4Fw" label="Save" iconURI="platform:/plugin/com.mmyumu.magic-tome-server/icons/save_edit.gif" command="_RzVhdUJKEeKXRZlTNXf4Fw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RzVhgEJKEeKXRZlTNXf4Fw" label="Quit" command="_RzU6akJKEeKXRZlTNXf4Fw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_RzVhgUJKEeKXRZlTNXf4Fw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RzVhgkJKEeKXRZlTNXf4Fw" label="About" command="_RzVheEJKEeKXRZlTNXf4Fw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_RzWIhEJKEeKXRZlTNXf4Fw">
+      <children xsi:type="menu:ToolBar" xmi:id="_RzWIhUJKEeKXRZlTNXf4Fw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_RzWIhkJKEeKXRZlTNXf4Fw" label="Open database" iconURI="platform:/plugin/com.mmyumu.magic-tome-server/icons/folder-open-document_16x16.png" tooltip="Open database" command="_RzVhckJKEeKXRZlTNXf4Fw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_RzWIh0JKEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome-server.toolitem.save" iconURI="platform:/plugin/com.mmyumu.magic-tome-server/icons/save_edit.gif" command="_RzVhdUJKEeKXRZlTNXf4Fw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_RzU6a0JKEeKXRZlTNXf4Fw" contributionURI="bundleclass://com.mmyumu.magic-tome-server/com.mmyumu.magictome.handlers.QuitHandler" command="_RzU6akJKEeKXRZlTNXf4Fw"/>
+  <handlers xmi:id="_RzVhc0JKEeKXRZlTNXf4Fw" contributionURI="bundleclass://com.mmyumu.magic-tome-server/com.mmyumu.magictome.handlers.OpenHandler" command="_RzVhckJKEeKXRZlTNXf4Fw"/>
+  <handlers xmi:id="_RzVhdkJKEeKXRZlTNXf4Fw" contributionURI="bundleclass://com.mmyumu.magic-tome-server/com.mmyumu.magictome.handlers.SaveHandler" command="_RzVhdUJKEeKXRZlTNXf4Fw"/>
+  <handlers xmi:id="_RzVheUJKEeKXRZlTNXf4Fw" contributionURI="bundleclass://com.mmyumu.magic-tome-server/com.mmyumu.magictome.handlers.AboutHandler" command="_RzVheEJKEeKXRZlTNXf4Fw"/>
+  <bindingTables xmi:id="_RzVhcEJKEeKXRZlTNXf4Fw" bindingContext="_RzU6YUJKEeKXRZlTNXf4Fw">
+    <bindings xmi:id="_RzVhcUJKEeKXRZlTNXf4Fw" keySequence="M1+Q" command="_RzU6akJKEeKXRZlTNXf4Fw"/>
+    <bindings xmi:id="_RzVhdEJKEeKXRZlTNXf4Fw" keySequence="M1+O" command="_RzVhckJKEeKXRZlTNXf4Fw"/>
+    <bindings xmi:id="_RzVhd0JKEeKXRZlTNXf4Fw" keySequence="M1+S" command="_RzVhdUJKEeKXRZlTNXf4Fw"/>
+    <bindings xmi:id="_RzVhekJKEeKXRZlTNXf4Fw" keySequence="M1+A" command="_RzVheEJKEeKXRZlTNXf4Fw"/>
+  </bindingTables>
+  <rootContext xmi:id="_RzU6YUJKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_RzU6YkJKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_RzU6Y0JKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_RzU6akJKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_RzVhckJKEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome-server.open" commandName="openCommand"/>
+  <commands xmi:id="_RzVhdUJKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_RzVheEJKEeKXRZlTNXf4Fw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_RzU6ZEJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_RzU6ZUJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_RzU6ZkJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_RzU6Z0JKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_RzU6aEJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_RzU6aUJKEeKXRZlTNXf4Fw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

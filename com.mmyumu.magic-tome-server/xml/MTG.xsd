@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+	elementFormDefault="qualified">
+	<xs:element name="mtg_carddatabase">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="bdd_date" type="xs:string"/>
+				<xs:element name="bdd_version" type="xs:string"/>
+				<xs:element name="sets">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="set" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="cards">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="card" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="set">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="code" type="xs:ID"/>
+				<xs:element name="code_magiccards" type="xs:string"/>
+				<xs:element name="date" type="xs:string"/>
+				<xs:element name="promo" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="card">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:string"/>
+				<xs:element name="name" type="xs:string"/>
+				<!-- <xs:element name="set" type="xs:string"/> -->
+				<xs:element name="set" type="xs:IDREF"/>
+				<xs:element name="type" type="xs:string"/>
+				<xs:element name="rarity" type="xs:string"/>
+				<xs:element name="manacost" type="xs:string"/>
+				<xs:element name="converted_manacost" type="xs:string"/>
+				<xs:element name="power" type="xs:string"/>
+				<xs:element name="toughness" type="xs:string"/>
+				<xs:element name="loyalty" type="xs:string"/>
+				<xs:element name="ability" type="xs:string"/>
+				<xs:element name="flavor" type="xs:string"/>
+				<xs:element name="variation" type="xs:string"/>
+				<xs:element name="artist" type="xs:string"/>
+				<xs:element name="number" type="xs:string"/>
+				<xs:element name="rating" type="xs:string"/>
+				<xs:element name="ruling" type="xs:string"/>
+				<xs:element name="color" type="xs:string"/>
+				<xs:element name="generated_mana" type="xs:string"/>
+				<xs:element name="pricing_low" type="xs:string"/>
+				<xs:element name="pricing_mid" type="xs:string"/>
+				<xs:element name="pricing_high" type="xs:string"/>
+				<xs:element name="back_id" type="xs:string"/>
+				<xs:element name="name_CN" type="xs:string"/>
+				<xs:element name="name_TW" type="xs:string"/>
+				<xs:element name="name_FR" type="xs:string"/>
+				<xs:element name="name_DE" type="xs:string"/>
+				<xs:element name="name_IT" type="xs:string"/>
+				<xs:element name="name_JP" type="xs:string"/>
+				<xs:element name="name_PT" type="xs:string"/>
+				<xs:element name="name_RU" type="xs:string"/>
+				<xs:element name="name_ES" type="xs:string"/>
+				<xs:element name="name_KO" type="xs:string"/>
+				<xs:element name="legality_Block" type="xs:string"/>
+				<xs:element name="legality_Standard" type="xs:string"/>
+				<xs:element name="legality_Extended" type="xs:string"/>
+				<xs:element name="legality_Modern" type="xs:string"/>
+				<xs:element name="legality_Legacy" type="xs:string"/>
+				<xs:element name="legality_Vintage" type="xs:string"/>
+				<xs:element name="legality_Highlander" type="xs:string"/>
+				<xs:element name="legality_French_Commander" type="xs:string"/>
+				<xs:element name="legality_Commander" type="xs:string"/>
+				<xs:element name="legality_peasant" type="xs:string"/>
+				<xs:element name="legality_Pauper" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
