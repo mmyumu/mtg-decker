@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/workspace_RCP/com.mmyumu.magic-tome/lib/jaxb-api.jar" sourcepath="lib/jaxb-api-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/com.mmyumu.magic-tome/lib/jaxb-api-doc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/workspace_RCP/com.mmyumu.magic-tome/lib/jaxb-impl.jar" sourcepath="lib/jaxb-impl.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/com.mmyumu.magic-tome/lib/jaxb-impl-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/workspace_RCP/com.mmyumu.magic-tome/lib/jaxb-xjc.jar" sourcepath="lib/jaxb-xjc.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/com.mmyumu.magic-tome/lib/jaxb-xjc-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
