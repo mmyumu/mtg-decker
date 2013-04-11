@@ -52,7 +52,7 @@ public class SaveHandler implements IProgressMonitor {
 					throws InvocationTargetException, InterruptedException {
 				pmContext.set(IProgressMonitor.class.getName(), monitor);
 				if (contribution != null) {
-					Object clientObject = contribution.getObject();
+					// Object clientObject = contribution.getObject();
 					//					ContextInjectionFactory.invoke(clientObject, Persist.class, //$NON-NLS-1$
 					// pmContext, null);
 				}
