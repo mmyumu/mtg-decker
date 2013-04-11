@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_zuW14DgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ide.application" bindingContexts="_zuW14TgMEeK8o9VhUiyB-Q">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_zuXc_DgMEeK8o9VhUiyB-Q" label="Magic Tome" x="100" y="50" width="1024" height="768">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_zuYEBjgMEeK8o9VhUiyB-Q">
+      <children xsi:type="advanced:Perspective" xmi:id="_zuYEBzgMEeK8o9VhUiyB-Q" label="Deck Editor" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/save_edit.gif">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_zuYECDgMEeK8o9VhUiyB-Q" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_p9dHEDgNEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.deckeditor.options" containerData="30">
+            <children xsi:type="basic:PartStack" xmi:id="_LCTn4DzLEeKXRZlTNXf4Fw" elementId="">
+              <children xsi:type="basic:Part" xmi:id="_kKXHEDgNEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.deckeditor.sets" containerData="50" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.ui.sets.SetsPart" label="Sets" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/Cardgame_16x16.png" closeable="true">
+                <toolbar xmi:id="_vqImkD8fEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome.deckeditor.sets.toolbar">
+                  <children xsi:type="menu:HandledToolItem" xmi:id="_5g5iAEItEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome.deckeditor.sets.toolbar.selectAll" label="Select all" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/all_instances_16x16.gif" tooltip="Select all" enabled="false" command="_T9XIED8gEeKXRZlTNXf4Fw"/>
+                </toolbar>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_Tew20DzLEeKXRZlTNXf4Fw" elementId="">
+              <children xsi:type="basic:Part" xmi:id="_rzh34DgNEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.deckeditor.filters" containerData="50" label="Filters" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/filterimages_16x16.png" closeable="true"/>
+            </children>
+          </children>
+          <children xsi:type="basic:InputPart" xmi:id="_S37joDjWEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.deckeditor.database.browser" containerData="50" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.ui.database.browser.DatabaseBrowserPart" label="Database Browser" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/sample.gif"/>
+          <children xsi:type="basic:Part" xmi:id="_mBUBoDgNEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.deckeditor.mydeck" containerData="20" label="My Deck"/>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_hjqKkDgNEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.perspective.0" label="Playing game"/>
+    </children>
+    <mainMenu xmi:id="_zuXc_TgMEeK8o9VhUiyB-Q" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_zuYEADgMEeK8o9VhUiyB-Q" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zuYEATgMEeK8o9VhUiyB-Q" label="Update Database" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/adept_update_16x16.png" command="_10xnAEJYEeKXRZlTNXf4Fw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zuYEAzgMEeK8o9VhUiyB-Q" label="Quit" command="_zuW16jgMEeK8o9VhUiyB-Q"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_zuYEBDgMEeK8o9VhUiyB-Q" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zuYEBTgMEeK8o9VhUiyB-Q" label="About" command="_zuXc-TgMEeK8o9VhUiyB-Q"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_zuYECjgMEeK8o9VhUiyB-Q">
+      <children xsi:type="menu:ToolBar" xmi:id="_zuYECzgMEeK8o9VhUiyB-Q" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zuYrEDgMEeK8o9VhUiyB-Q" iconURI="platform:/plugin/com.mmyumu.magic-tome/icons/adept_update_16x16.png" tooltip="" command="_10xnAEJYEeKXRZlTNXf4Fw"/>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_jThwoESNEeKS2ovYA2FOdw" elementId="com.mmyumu.magic-tome.trimbar.0" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_kFbusESNEeKS2ovYA2FOdw" elementId="com.mmyumu.magic-tome.updatestatusbar" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.ui.statusbar.UpdateStatusBar"/>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_zuXc8DgMEeK8o9VhUiyB-Q" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.QuitHandler" command="_zuW16jgMEeK8o9VhUiyB-Q"/>
+  <handlers xmi:id="_zuXc9DgMEeK8o9VhUiyB-Q" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.OpenHandler" command="_zuXc8zgMEeK8o9VhUiyB-Q"/>
+  <handlers xmi:id="_zuXc9zgMEeK8o9VhUiyB-Q" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.SaveHandler" command="_zuXc9jgMEeK8o9VhUiyB-Q"/>
+  <handlers xmi:id="_zuXc-jgMEeK8o9VhUiyB-Q" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.AboutHandler" command="_zuXc-TgMEeK8o9VhUiyB-Q"/>
+  <handlers xmi:id="_NYDoAD8gEeKXRZlTNXf4Fw" elementId="com.mmyumu.magictome.handler.selectAll" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.SelectAllHandler" command="_T9XIED8gEeKXRZlTNXf4Fw"/>
+  <handlers xmi:id="_n_F0IEJZEeKXRZlTNXf4Fw" elementId="" contributionURI="bundleclass://com.mmyumu.magic-tome/com.mmyumu.magictome.handlers.UpdateDatabaseHandler" command="_10xnAEJYEeKXRZlTNXf4Fw"/>
+  <bindingTables xmi:id="_zuXc8TgMEeK8o9VhUiyB-Q" bindingContext="_zuW14TgMEeK8o9VhUiyB-Q">
+    <bindings xmi:id="_zuXc8jgMEeK8o9VhUiyB-Q" keySequence="M1+Q" command="_zuW16jgMEeK8o9VhUiyB-Q"/>
+    <bindings xmi:id="_zuXc9TgMEeK8o9VhUiyB-Q" keySequence="M1+O" command="_zuXc8zgMEeK8o9VhUiyB-Q"/>
+    <bindings xmi:id="_zuXc-DgMEeK8o9VhUiyB-Q" keySequence="M1+S" command="_zuXc9jgMEeK8o9VhUiyB-Q"/>
+    <bindings xmi:id="_zuXc-zgMEeK8o9VhUiyB-Q" keySequence="M1+A" command="_zuXc-TgMEeK8o9VhUiyB-Q"/>
+  </bindingTables>
+  <rootContext xmi:id="_zuW14TgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_zuW14jgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_zuW14zgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_zuW16jgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_zuXc8zgMEeK8o9VhUiyB-Q" elementId="com.mmyumu.magic-tome.open" commandName="openCommand"/>
+  <commands xmi:id="_zuXc9jgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_zuXc-TgMEeK8o9VhUiyB-Q" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_T9XIED8gEeKXRZlTNXf4Fw" elementId="com.mmyumu.magictome.commands.selectAll" commandName="selectAllCommand"/>
+  <commands xmi:id="_10xnAEJYEeKXRZlTNXf4Fw" elementId="com.mmyumu.magic-tome.updateDatabase" commandName="updateDatabase"/>
+  <addons xmi:id="_zuW15DgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_zuW15TgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_zuW15jgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_zuW15zgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_zuW16DgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_zuW16TgMEeK8o9VhUiyB-Q" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
