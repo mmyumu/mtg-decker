@@ -64,62 +64,41 @@ import com.mmyumu.magictome.ui.IListModelPart;
  */
 public class SetsPart implements IListModelCheckListener,
 		IListModelPart<ListModelCheck> {
-	/**
-	 * The ID of the part
-	 */
+
+	/** The ID of the part. */
 	public static String ID;
 
-	/**
-	 * The TableViewer to display the Sets
-	 */
+	/** The TableViewer to display the Sets. */
 	private CheckboxTableViewer viewer;
 
-	/**
-	 * The part
-	 */
+	/** The part. */
 	@Inject
 	private MPart part;
 
-	/**
-	 * The logger
-	 */
+	/** The logger. */
 	@Inject
 	private Logger logger;
 
-	/**
-	 * The global Model
-	 */
+	/** The global Model. */
 	private MtgDatabaseModel mtgModel;
 
-	/**
-	 * The Model containing the sets
-	 */
+	/** The Model containing the sets. */
 	private SetsModel model;
 
-	/**
-	 * The select/unselect all item from the toolbar
-	 */
+	/** The select/unselect all item from the toolbar. */
 	private MHandledToolItem selectAllItem;
 
-	/**
-	 * The Handler Service
-	 */
+	/** The Handler Service. */
 	@Inject
 	private EHandlerService handlerService;
 
-	/**
-	 * Container of the Part
-	 */
+	/** Container of the Part. */
 	private Composite container;
 
-	/**
-	 * Parent Composite
-	 */
+	/** Parent Composite. */
 	private Composite parent;
 
-	/**
-	 * Tells whether the model is empty or not
-	 */
+	/** Tells whether the model is empty or not. */
 	private boolean empty;
 
 	/**
