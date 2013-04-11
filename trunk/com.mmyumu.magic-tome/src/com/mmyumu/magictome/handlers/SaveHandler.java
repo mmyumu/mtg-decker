@@ -24,6 +24,7 @@ import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.swt.widgets.Shell;
+
 //import org.eclipse.e4.ui.workbench.Persist;
 
 public class SaveHandler {
@@ -51,7 +52,7 @@ public class SaveHandler {
 					throws InvocationTargetException, InterruptedException {
 				pmContext.set(IProgressMonitor.class.getName(), monitor);
 				if (contribution != null) {
-					Object clientObject = contribution.getObject();
+					// Object clientObject = contribution.getObject();
 					//					ContextInjectionFactory.invoke(clientObject, Persist.class, //$NON-NLS-1$
 					// pmContext, null);
 				}
